@@ -1,5 +1,3 @@
-# require 'sinatra'
-# require 'thin'
 require 'recurly'
 
     #GET client
