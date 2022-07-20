@@ -23,8 +23,10 @@ require 'recurly'
          body: account_update
        )
        puts "Updated Account #{account}"
-      rescue Recurly::Errors::ValidationError => e
-        puts "ValidationError: #{e.recurly_error.params}"
+       
+#       exception handling leftover from documentation, because I'm only running scripts it wasn't needed.
+#       rescue Recurly::Errors::ValidationError => e
+#         puts "ValidationError: #{e.recurly_error.params}"
       end
 
      
