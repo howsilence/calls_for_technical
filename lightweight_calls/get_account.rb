@@ -18,7 +18,9 @@ require 'recurly'
     begin
       account = @client.get_account(account_id: "code-123456789")
       puts "Got Account #{account}"
-    rescue Recurly::Errors::NotFoundError
-      puts "Resource Not Found"
+        
+#    exception handling leftover from documentation, because I'm only running scripts it wasn't needed.     
+#     rescue Recurly::Errors::NotFoundError
+#       puts "Resource Not Found"
     end
     
