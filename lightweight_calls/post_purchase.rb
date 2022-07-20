@@ -34,8 +34,10 @@ require 'recurly'
     )
     puts "Created Charge Invoice #{invoice_collection.charge_invoice}"
     puts "Created Credit Invoices #{invoice_collection.credit_invoices}"
-  rescue Recurly::Errors::ValidationError => e
-    puts "ValidationError: #{e.recurly_error.params}"
+    
+#   exception handling leftover from documentation, because I'm only running scripts it wasn't needed.    
+#   rescue Recurly::Errors::ValidationError => e
+#     puts "ValidationError: #{e.recurly_error.params}"
   end
   
 
